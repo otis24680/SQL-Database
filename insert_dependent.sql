@@ -14,7 +14,11 @@ INSERT INTO Films (Title, Release_Year, Genre_ID, Director_ID, Duration, Rating)
 ('True Lies', 1994, 7, 2, 141, 7.2),    
 ('Saving Private Ryan', 1998, 7, 1, 169, 8.6),    
 ('Catch Me If You Can', 2002, 2, 1, 141, 8.1),    
-('Indiana Jones and the Last Crusade', 1989, 4, 1, 127, 8.2);  
+('Indiana Jones and the Last Crusade', 1989, 4, 1, 127, 8.2),
+('The Irishman', 2019, 2, 3, 209, 7.8),  
+('Shutter Island', 2010, 2, 3, 138, 8.2),  
+('The Wolf of Wall Street', 2013, 2, 3, 180, 8.2);
+--počet záznamů: 18
 
 
 -- Insert Film_Actors (ensure Film_ID and Actor_ID exist)
@@ -25,9 +29,13 @@ INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES
 (2, 4, 'Madolyn'), 
 (3, 1, 'Jack Dawson'), 
 (3, 4, 'Rose DeWitt Bukater');
+--počet záznamů: 6
 
 -- Insert Reviews (ensure Film_ID and User_ID exist)
 INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES 
 (1, 1, 10, 'Amazing visuals and story!'), 
 (2, 2, 9, 'A crime thriller masterpiece.'), 
 (3, 3, 8, 'Classic love story.');
+--počet záznamů: 3
+
+--počet celkových záznamů: 27

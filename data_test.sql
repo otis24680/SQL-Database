@@ -1,1 +1,1 @@
-SELECT * FROM films
+SELECT * FROM users

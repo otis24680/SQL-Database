@@ -73,6 +73,6 @@ INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES
 (9, 2, 8, 'Surprisingly good with great pacing.');
 
 
---počet záznamů: 3
+--počet záznamů: 37
 
---počet celkových záznamů: 27
+--počet celkových záznamů: 61

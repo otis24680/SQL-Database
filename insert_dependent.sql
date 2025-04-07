@@ -35,7 +35,44 @@ INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES
 INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES 
 (1, 1, 10, 'Amazing visuals and story!'), 
 (2, 2, 9, 'A crime thriller masterpiece.'), 
-(3, 3, 8, 'Classic love story.');
+(3, 3, 8, 'Classic love story.'),
+(4, 5, 9, 'Great performances and intense story.'),
+(5, 1, 7, 'Good, but pacing was a bit off.'),
+(6, 7, 8, 'Visually stunning with a solid plot.'),
+(7, 2, 6, 'Interesting concept but slow in parts.'),
+(8, 6, 10, 'One of the best I have ever seen!'),
+(9, 4, 5, 'Some good moments, but overall forgettable.'),
+(10, 8, 9, 'Fantastic direction and acting.'),
+(11, 9, 6, 'Mediocre execution of a good idea.'),
+(12, 10, 8, 'Solid movie with great atmosphere.'),
+(13, 3, 4, 'Disappointing, expected more.'),
+(14, 11, 7, 'Not bad, not amazing either.'),
+(15, 12, 9, 'Surprisingly good! Well written.'),
+(16, 13, 10, 'Masterpiece in every sense.'),
+(17, 2, 5, 'A bit boring but well made.'),
+(18, 1, 8, 'Impressive from start to finish.'),
+(5, 4, 9, 'Really enjoyed the atmosphere and soundtrack.'),
+(6, 5, 7, 'Good performances, but lacked emotional impact.'),
+(7, 6, 8, 'Solid direction with great cinematography.'),
+(8, 7, 10, 'Blew me away. Everything was perfect.'),
+(9, 8, 6, 'Some cool scenes, but not very memorable.'),
+(10, 9, 8, 'Great pacing and solid acting.'),
+(11, 10, 5, 'Didn’t live up to the hype for me.'),
+(12, 11, 9, 'Very compelling and well-executed.'),
+(13, 12, 7, 'Had fun watching it. A bit predictable though.'),
+(14, 13, 6, 'Decent film but dragged at times.'),
+(15, 3, 9, 'Loved the tension and character work.'),
+(16, 4, 10, 'Absolutely brilliant. Would watch again.'),
+(17, 5, 8, 'Impressive visuals and engaging plot.'),
+(18, 6, 4, 'Not my cup of tea.'),
+(4, 11, 7, 'Enjoyed the story, some scenes were too long.'),
+(5, 12, 8, 'Well acted and entertaining.'),
+(6, 13, 6, 'Cool idea, but didn’t hit emotionally.'),
+(7, 1, 5, 'Nice visuals, weak script.'),
+(8, 9, 9, 'Excellent film overall.'),
+(9, 2, 8, 'Surprisingly good with great pacing.');
+
+
 --počet záznamů: 3
 
 --počet celkových záznamů: 27

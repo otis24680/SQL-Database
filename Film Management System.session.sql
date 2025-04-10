@@ -1,3 +1,5 @@
+-- nondependent table
+
 CREATE TABLE Genres (
     Genre_ID SERIAL PRIMARY KEY,
     Genre_Name VARCHAR(50) UNIQUE NOT NULL
@@ -22,7 +24,7 @@ CREATE TABLE Users (
 );
 
 
--- dependent tablesss
+-- dependent tables
 
 CREATE TABLE Films (
     Film_ID SERIAL PRIMARY KEY,

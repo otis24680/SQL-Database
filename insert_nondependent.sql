@@ -15,8 +15,12 @@ INSERT INTO Directors (Name, Birthdate) VALUES
 ('Steven Spielberg', '1946-12-18'), 
 ('James Cameron', '1954-08-16'), 
 ('Martin Scorsese', '1942-11-17'),
-('Christopher Nolan', '1970-07-30');
---počet záznamů: 4
+('Christopher Nolan', '1970-07-30'),
+('Quentin Tarantino', '1963-03-27'),
+('Ridley Scott', '1937-11-30'),
+('Clint Eastwood', '1930-05-31'),
+('Woody Allen', '1935-12-01');
+--počet záznamů: 8
 
 -- Insert Actors
 INSERT INTO Actors (Name, Birthdate) VALUES 

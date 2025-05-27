@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: league_of_legends
+      POSTGRES_DB: film_database
     ports:
       - "5432:5432"
     volumes:

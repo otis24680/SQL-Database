@@ -47,13 +47,77 @@ INSERT INTO Films (Title, Release_Year, Genre_ID, Director_ID, Duration, Rating)
 
 -- Insert Film_Actors (ensure Film_ID and Actor_ID exist)
 INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES 
+--interstellar
 (1, 2, 'Dr. Brand'), 
 (1, 3, 'Cooper'), 
+-- The Departed
 (2, 3, 'Frank Costello'), 
 (2, 4, 'Madolyn'), 
+-- Titanic
 (3, 1, 'Jack Dawson'), 
-(3, 4, 'Rose DeWitt Bukater');
---počet záznamů: 6
+(3, 4, 'Rose DeWitt Bukater'),
+-- Pulp Fiction
+(19, 22, 'Vincent Vega'),
+(19, 23, 'Jules Winnfield'),
+-- Kill Bill: Vol. 1
+(20, 24, 'The Bride'),
+(20, 25, 'O-Ren Ishii'),
+-- Inglourious Basterds
+(21, 26, 'Lt. Aldo Raine'),
+(21, 27, 'Hans Landa'),
+-- Django Unchained
+(22, 28, 'Django'),
+(22, 29, 'Broomhilda'),
+-- Once Upon a Time in Hollywood
+(23, 30, 'Sharon Tate'),
+(23, 31, 'James Stacy'),
+-- Blade Runner
+(24, 32, 'Rick Deckard'),
+(24, 33, 'Roy Batty'),
+-- Gladiator
+(25, 34, 'Maximus'),
+(25, 35, 'Commodus'),
+-- The Martian
+(26, 36, 'Mark Watney'),
+(26, 7, 'Melissa Lewis'),
+-- Black Hawk Down
+(27, 38, 'SSgt. Eversmann'),
+(27, 39, 'Grimes'),
+-- Alien
+(28, 40, 'Dallas'),
+(28, 41, 'Lambert'),
+-- Gran Torino
+(29, 42, 'Thao'),
+(29, 43, 'Sue'),
+-- Million Dollar Baby
+(30, 44, 'Maggie Fitzgerald'),
+(30, 45, 'Eddie Scrap-Iron Dupris'),
+-- American Sniper
+(31, 46, 'Chris Kyle'),
+(31, 47, 'Taya Kyle'),
+-- Mystic River
+(32, 48, 'Jimmy Markum'),
+(32, 49, 'Sean Devine'),
+-- Unforgiven
+(33, 50, 'Little Bill'),
+(33, 51, 'English Bob'),
+-- Annie Hall
+(34, 52, 'Annie Hall'),
+(34, 53, 'Rob'),
+-- Manhattan
+(35, 54, 'Tracy'),
+(35, 55, 'Yale'),
+-- Midnight in Paris
+(36, 56, 'Gil'),
+(36, 57, 'Inez'),
+-- Match Point
+(37, 58, 'Chris Wilton'),
+(37, 59, 'Nola Rice'),
+-- Vicky Cristina Barcelona
+(38, 60, 'Maria Elena'),
+(38, 61, 'Vicky');
+
+--počet záznamů: 46
 
 -- Insert Reviews (ensure Film_ID and User_ID exist)
 INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES 
@@ -99,4 +163,4 @@ INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES
 
 --počet záznamů: 37
 
---počet celkových záznamů: 61
+--počet celkových záznamů: 81

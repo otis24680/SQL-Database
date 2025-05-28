@@ -163,4 +163,4 @@ INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES
 
 --počet záznamů: 37
 
---počet celkových záznamů: 81
+--počet celkových záznamů: 121

@@ -1,2 +1,1 @@
-
-SELECT * FROM film_actors
+SELECT * FROM film_actor_roles

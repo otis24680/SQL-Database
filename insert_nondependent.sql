@@ -144,4 +144,4 @@ INSERT INTO Users (Username, Email) VALUES
 ('TheRealCritic', 'therealcritic@example.com');
 --počet záznamů: 13
 
---počet celkových záznamů: 46
+--počet celkových záznamů: 86

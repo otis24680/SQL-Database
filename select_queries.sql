@@ -37,7 +37,7 @@ HAVING COUNT(Films.Film_ID) >= 5
 ORDER BY Film_Count DESC;
 
 -- 7. Vytvoření pohledu pro uživatelské recenze
-CREATE VIEW user_reviews_summary AS 
+CREATE VIEW user_reviews_summary AS
 SELECT 
     Users.Username, 
     Films.Title AS Film_Title, 

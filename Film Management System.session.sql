@@ -5,17 +5,24 @@ CREATE TABLE Genres (
     Genre_Name VARCHAR(50) UNIQUE NOT NULL
 );
 
+-- Přepsání tabulky Directors
+
 CREATE TABLE Directors (
     Director_ID SERIAL PRIMARY KEY,
-    Name VARCHAR(100) NOT NULL, --jmena a prijmeni
+    First_Name VARCHAR(50) NOT NULL,     -- křestní jméno
+    Last_Name VARCHAR(50) NOT NULL,      -- příjmení
     Birthdate DATE
 );
 
+-- Přepsání tabulky Actors  
+
 CREATE TABLE Actors (
     Actor_ID SERIAL PRIMARY KEY,
-    Name VARCHAR(100) NOT NULL, --jmeno a prijmeni
+    First_Name VARCHAR(50) NOT NULL,     -- křestní jméno
+    Last_Name VARCHAR(50) NOT NULL,      -- příjmení
     Birthdate DATE
 );
+
 
 CREATE TABLE Users (
     User_ID SERIAL PRIMARY KEY,
@@ -40,8 +47,7 @@ CREATE TABLE Films (
 CREATE TABLE Film_Actors (
     Film_ID INT REFERENCES Films(Film_ID) ON DELETE CASCADE,
     Actor_ID INT REFERENCES Actors(Actor_ID) ON DELETE CASCADE,
-    Role VARCHAR(100),
-    PRIMARY KEY (Film_ID, Actor_ID) --vymazat primary key
+    Role VARCHAR(100)
 );
 
 

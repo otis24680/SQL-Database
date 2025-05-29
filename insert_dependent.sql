@@ -1,4 +1,4 @@
--- Insert Films (ensure Genre_ID and Director_ID exist)
+-- Filmy (musí existovat Genre_ID a Director_ID)
 INSERT INTO Films (Title, Release_Year, Genre_ID, Director_ID, Duration, Rating) VALUES 
 ('Interstellar', 2014, 1, 4, 169, 8.6), 
 ('The Departed', 2006, 2, 3, 151, 8.5), 
@@ -45,7 +45,7 @@ INSERT INTO Films (Title, Release_Year, Genre_ID, Director_ID, Duration, Rating)
 --počet záznamů: 38
 
 
--- Insert Film_Actors (ensure Film_ID and Actor_ID exist)
+--Filmový_Herci (musí existovat Film_ID a Actor_ID)
 INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES 
 --interstellar
 (1, 2, 'Dr. Brand'), 
@@ -119,7 +119,7 @@ INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES
 
 --počet záznamů: 46
 
--- Insert Reviews (ensure Film_ID and User_ID exist)
+--Hodnocení (musí existovat Film_ID a User_ID)
 INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES 
 (1, 1, 10, 'Amazing visuals and story!'), 
 (2, 2, 9, 'A crime thriller masterpiece.'), 

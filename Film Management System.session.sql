@@ -1,4 +1,4 @@
--- nondependent table
+-- nodependentní tabulky
 
 CREATE TABLE Genres (
     Genre_ID SERIAL PRIMARY KEY,
@@ -24,7 +24,7 @@ CREATE TABLE Users (
 );
 
 
--- dependent tables
+-- dependentní tabulky
 
 CREATE TABLE Films (
     Film_ID SERIAL PRIMARY KEY,

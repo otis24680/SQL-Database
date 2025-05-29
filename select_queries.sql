@@ -19,31 +19,20 @@ INNER JOIN Films ON Reviews.Film_ID = Films.Film_ID;
 -- 4. Všechny filmy i bez recenzí
 SELECT Films.Title, Reviews.Rating, Reviews.Comment  
 FROM Films  
-LEFT JOIN Reviews ON Films.Film_ID = Reviews.Film_ID;
+LEFT JOIN Reviews ON Films.Film_ID = Reviews.Film_ID; --všechny filmy, a pokud existuje recenze, tak ji přidá
 
 -- 5. Filmy Martina Scorseseho, seřazené podle hodnocení
-SELECT Films.Title, Films.Release_Year, Films.Rating
+SELECT Films.Title, Films.Release_Year, Films.Rating --zobrazíme si název, rok vydání a hodnocení filmu
 FROM Films
-INNER JOIN Directors ON Films.Director_ID = Directors.Director_ID
-WHERE Directors.Name = 'Martin Scorsese'
-ORDER BY Films.Rating DESC;
+INNER JOIN Directors ON Films.Director_ID = Directors.Director_ID --přiřadíme řežiséra
+WHERE Directors.Name = 'Martin Scorsese' --ale pouze ty, které režíroval scorsese
+ORDER BY Films.Rating DESC; --desc sestupně, asc vzestupně  
 
 -- 6. Počet filmů podle žánru, pokud jich je alespoň 5
-SELECT Genres.Genre_Name, COUNT(Films.Film_ID) AS Film_Count
-FROM Films
-INNER JOIN Genres ON Films.Genre_ID = Genres.Genre_ID
-GROUP BY Genres.Genre_Name
+SELECT Genres.Genre_Name, COUNT(Films.Film_ID) AS Film_Count --spočítá počet filmů
+FROM Films --vybíráme z films
+INNER JOIN Genres ON Films.Genre_ID = Genres.Genre_ID --každému filmu přiřádíme název řádku (pokud mají platný genreID)
+GROUP BY Genres.Genre_Name --dá dohromady filmy se stejným žánrem
 HAVING COUNT(Films.Film_ID) >= 5
-ORDER BY Film_Count DESC;
+ORDER BY Film_Count DESC; --sestupně
 
--- 7. Vytvoření pohledu pro uživatelské recenze
-CREATE VIEW user_reviews_summary AS
-SELECT 
-    Users.Username, 
-    Films.Title AS Film_Title, 
-    Reviews.Rating, 
-    Reviews.Comment, 
-    Reviews.Review_Date
-FROM Reviews
-INNER JOIN Users ON Reviews.User_ID = Users.User_ID
-INNER JOIN Films ON Reviews.Film_ID = Films.Film_ID;

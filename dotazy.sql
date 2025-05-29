@@ -48,3 +48,12 @@ SELECT --vybereme jméno recenzenta, název filmu, rating, komentář a datum re
 FROM Reviews
 INNER JOIN Users ON Reviews.User_ID = Users.User_ID --spojíme recenzi s uživately
 INNER JOIN Films ON Reviews.Film_ID = Films.Film_ID; --přiřadíme film k recenzi
+
+
+CREATE VIEW film_directors_sorted AS
+SELECT 
+    Films.Title,                         -- název filmu
+    Directors.Name AS Director           -- jméno režiséra
+FROM Films
+INNER JOIN Directors ON Films.Director_ID = Directors.Director_ID
+ORDER BY Directors.Name ASC;            -- řazení podle jména režiséra vzestupně

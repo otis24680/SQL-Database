@@ -36,3 +36,28 @@ GROUP BY Genres.Genre_Name --dá dohromady filmy se stejným žánrem
 HAVING COUNT(Films.Film_ID) >= 5
 ORDER BY Film_Count DESC; --sestupně
 
+
+
+--Genres → Films
+--zero n (žánr) – jeden žánr může mít žádný nebo více filmů.
+--one only (film) – každý film musí mít právě jeden žánr.
+--
+--Directors → Films
+--zero n (režisér) – režisér může mít žádný nebo více filmů.
+--one only (film) – každý film má právě jednoho režiséra.
+--
+--Films → Film_Actors
+--one only (film) – každý záznam v Film_Actors musí patřit k jednomu filmu.
+--zero n (film) – film může mít žádné nebo více přiřazených herců.
+--
+--Actors → Film_Actors
+--zero n (herec) – herec může být obsazen v žádném nebo více filmech.
+--one only (záznam) – každý záznam musí odkazovat na jednoho existujícího herce.
+--
+--Films → Reviews
+--zero n (film) – film může mít žádnou nebo více recenzí.
+--one only (recenze) – každá recenze patří právě jednomu filmu.
+--
+--Users → Reviews
+--zero n (uživatel) – uživatel může napsat žádnou nebo více recenzí.
+--one only (recenze) – každá recenze musí mít jednoho autora.

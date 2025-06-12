@@ -5,21 +5,19 @@ CREATE TABLE Genres (
     Genre_Name VARCHAR(50) UNIQUE NOT NULL
 );
 
--- Přepsání tabulky Directors
 
 CREATE TABLE Directors (
     Director_ID SERIAL PRIMARY KEY,
-    First_Name VARCHAR(50) NOT NULL,     -- křestní jméno
-    Last_Name VARCHAR(50) NOT NULL,      -- příjmení
+    First_Name VARCHAR(50) NOT NULL,     
+    Last_Name VARCHAR(50) NOT NULL,      
     Birthdate DATE
 );
 
--- Přepsání tabulky Actors  
 
 CREATE TABLE Actors (
     Actor_ID SERIAL PRIMARY KEY,
-    First_Name VARCHAR(50) NOT NULL,     -- křestní jméno
-    Last_Name VARCHAR(50) NOT NULL,      -- příjmení
+    First_Name VARCHAR(50) NOT NULL,     
+    Last_Name VARCHAR(50) NOT NULL,      
     Birthdate DATE
 );
 

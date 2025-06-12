@@ -122,6 +122,7 @@ INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES
 --Hodnocení (musí existovat Film_ID a User_ID)
 INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES 
 (1, 1, 10, 'Amazing visuals and story!'), 
+(1, 4, 10, 'Nezapomenutelný zážitek pro kohokoliv!'),
 (2, 2, 9, 'A crime thriller masterpiece.'), 
 (3, 3, 8, 'Classic love story.'),
 (4, 5, 9, 'Great performances and intense story.'),
@@ -158,9 +159,53 @@ INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES
 (6, 13, 6, 'Cool idea, but didn’t hit emotionally.'),
 (7, 1, 5, 'Nice visuals, weak script.'),
 (8, 9, 9, 'Excellent film overall.'),
-(9, 2, 8, 'Surprisingly good with great pacing.');
+(9, 2, 8, 'Surprisingly good with great pacing.'),
+(1, 2, 8, 'Nezapomenutelné zápletka.'), 
+(2, 3, 6, 'Zábavné kamera.'), 
+(3, 4, 8, 'Hluboké finále.'), 
+(19, 5, 10, 'Zábavné tempo.'), 
+(19, 6, 8, 'Divoké vizuál.'), 
+(20, 7, 6, 'Hluboké tempo.'), 
+(20, 8, 10, 'Skvělé finále.'), 
+(21, 9, 7, 'Nezapomenutelné kamera.'), 
+(21, 10, 7, 'Skvělé zvuk.'), 
+(22, 11, 10, 'Divoké postavy.'), 
+(22, 12, 6, 'Slabé scénář.'), 
+(23, 13, 8, 'Nezapomenutelné výprava.'), 
+(23, 1, 7, 'Skvělé kamera.'), 
+(24, 2, 10, 'Nezapomenutelný scénář.'), 
+(24, 3, 10, 'Divoká zápletka.'), 
+(25, 4, 4, 'Zklamání'), 
+(25, 5, 9, 'Nezapomenutelné finále.'), 
+(26, 6, 7, 'Nadprůměrné tempo.'), 
+(26, 7, 9, 'Slabé tempo.'), 
+(27, 8, 8, 'Nezapomenutelné finále.'), 
+(27, 9, 7, 'Zábavné postavy.'), 
+(28, 10, 10, 'Slabé postavy.'), 
+(28, 11, 10, 'Zklamání u vizuálu, jinak super.'), 
+(29, 12, 6, 'Dojemný zvuk.'), 
+(29, 13, 8, 'Skvělý scénář.'), 
+(30, 1, 8, 'Slabé tempo.'), 
+(30, 2, 6, 'Divoká výprava.'), 
+(31, 3, 6, 'Slabé vizuál.'), 
+(31, 4, 10, 'Zklamání zápletka.'), 
+(32, 5, 9, 'Nadprůměrné zápletka.'), 
+(32, 6, 6, 'Tiché vizuál.'), 
+(33, 7, 8, 'Divoké děj.'), 
+(33, 8, 10, 'Skvělé postavy.'), 
+(34, 9, 8, 'Nezapomenutelné vizuály.'), 
+(34, 10, 10, 'Dojemné zápletka.'), 
+(35, 11, 6, 'Tiché postavy.'), 
+(35, 12, 8, 'Skvělé tempo.'), 
+(36, 13, 6, 'Divoké postavy.'), 
+(36, 1, 8, 'Dojemný zápletka.'), 
+(37, 2, 7, 'Tichý děj.'), 
+(37, 3, 6, 'Slabá kamera.'), 
+(38, 4, 9, 'Skvělá kamera.'), 
+(38, 5, 10, 'Divoký vizuál.');
 
 
---počet záznamů: 37
 
---počet celkových záznamů: 121
+--počet záznamů: 80
+
+--počet celkových záznamů: 164

@@ -56,3 +56,12 @@ SELECT
 FROM Films
 INNER JOIN Directors ON Films.Director_ID = Directors.Director_ID
 ORDER BY Directors.Last_Name ASC, Directors.First_Name ASC;        -- řazení podle příjmení/vzestupně
+
+-- full film rating
+CREATE VIEW film_ratings_full AS
+SELECT 
+    Films.Title AS Film_Title,
+    Reviews.Rating,
+    Reviews.Comment
+FROM Reviews
+INNER JOIN Films ON Reviews.Film_ID = Films.Film_ID;

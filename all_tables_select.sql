@@ -12,4 +12,5 @@ SELECT * FROM film_director_summary;
 SELECT * FROM film_rating_avg;
 SELECT * FROM film_review_stats;
 SELECT * FROM user_reviews_summary;
-SELECT * FROM film_directors_sorted
+SELECT * FROM film_directors_sorted;
+SELECT * FROM film_ratings_full;

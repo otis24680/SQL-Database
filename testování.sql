@@ -25,7 +25,8 @@ INNER JOIN Genres g ON f.Genre_ID = g.Genre_ID;     -- spojení filmů s žánry
 -- vytvoření indexu = planning time 0.115, execution time 0.036
 CREATE INDEX idx_films_genre ON Films(Genre_ID);
 -- SET enable_hashjoin = off; <-- výrazně delší časy?? tak proč je rychlost o tolik menší, když to jsou stejné joiny
-EXPLAIN ANALYZE
+-- Index idx_films_genre je typu B-tree (standardní typ pro CREATE INDEX v PostgreSQL)
+EXPLAIN (ANALYZE, VERBOSE)
 SELECT f.Title, g.Genre_Name
 FROM Films f
 INNER JOIN Genres g ON f.Genre_ID = g.Genre_ID;     

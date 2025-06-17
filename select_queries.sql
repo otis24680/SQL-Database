@@ -56,7 +56,7 @@ GROUP BY Genres.Genre_Name  -- seskupí podle žánru
 HAVING COUNT(Films.Film_ID) >= 5  -- jen žánry s 5+ filmy
 ORDER BY Film_Count DESC;  -- sestupně podle počtu
 
--- Vztahy (ERD kardinality):
+-- Vztahy:
 -- Genres → Films      : zero n (žánr může mít 0–N filmů)        / one only (film musí mít právě jeden žánr)
 -- Directors → Films   : zero n (režisér může mít 0–N filmů)      / one only (film má právě jednoho režiséra)
 -- Films → Film_Actors : one only (záznam musí patřit k filmu)   / zero n (film může mít 0–N herců)

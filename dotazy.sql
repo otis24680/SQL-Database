@@ -24,7 +24,79 @@ SELECT
     AVG(Reviews.Rating) AS Avg_Rating  
 FROM Reviews
 INNER JOIN Films ON Reviews.Film_ID = Films.Film_ID  
-GROUP BY Films.Title;
+GROUP BY Film
+Users
+comment
+User_ID
+SERIAL
+NULL
+default
+comment
+Username
+VARCHAR(50)
+NULL
+default
+comment
+Email
+VARCHAR(100)
+NULL
+default
+comment
+Films
+comment
+Film_ID
+SERIAL
+NULL
+default
+comment
+Genre_ID
+SERIAL
+N-N
+default
+comment
+Director_ID
+SERIAL
+N-N
+default
+comment
+Title
+VARCHAR(200)
+N-N
+default
+comment
+Release_Year
+INT
+N-N
+default
+comment
+Duration
+INT
+NULL
+default
+comment
+Rating
+DECIMAL(3,1)
+NULL
+default
+comment
+Film_Actors
+comment
+Film_ID
+SERIAL
+N-N
+default
+comment
+Actor_ID
+SERIAL
+N-N
+default
+comment
+Role
+VARCHAR(100)
+NULL
+default
+comment
+s.Title;
 
 -- 4. Počet recenzí a poslední recenze u každého filmu
 CREATE OR REPLACE VIEW film_review_stats AS

@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -97,
-    "scrollLeft": -165,
+    "scrollTop": -77,
+    "scrollLeft": -84,
     "zoomLevel": 1,
     "show": 431,
     "database": 4,
@@ -220,7 +220,7 @@
           "x": 241,
           "y": 336,
           "zIndex": 2,
-          "widthName": 65,
+          "widthName": 63,
           "widthComment": 60,
           "color": ""
         },
@@ -296,9 +296,9 @@
         "options": 4,
         "ui": {
           "keys": 0,
-          "widthName": 72,
+          "widthName": 70,
           "widthComment": 60,
-          "widthDataType": 76,
+          "widthDataType": 75,
           "widthDefault": 60
         },
         "meta": {
@@ -316,7 +316,7 @@
         "options": 2,
         "ui": {
           "keys": 1,
-          "widthName": 64,
+          "widthName": 61,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -336,9 +336,9 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 61,
           "widthComment": 60,
-          "widthDataType": 76,
+          "widthDataType": 75,
           "widthDefault": 60
         },
         "meta": {
@@ -358,7 +358,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 76,
+          "widthDataType": 75,
           "widthDefault": 60
         },
         "meta": {
@@ -416,9 +416,9 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 61,
           "widthComment": 60,
-          "widthDataType": 76,
+          "widthDataType": 75,
           "widthDefault": 60
         },
         "meta": {
@@ -438,7 +438,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 76,
+          "widthDataType": 75,
           "widthDefault": 60
         },
         "meta": {
@@ -498,7 +498,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 76,
+          "widthDataType": 75,
           "widthDefault": 60
         },
         "meta": {
@@ -518,7 +518,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 83,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -558,7 +558,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 83,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -576,7 +576,7 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 73,
+          "widthName": 69,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -658,7 +658,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 76,
+          "widthDataType": 74,
           "widthDefault": 60
         },
         "meta": {
@@ -718,7 +718,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 83,
+          "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
@@ -836,10 +836,10 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 73,
+          "widthName": 69,
           "widthComment": 60,
-          "widthDataType": 67,
-          "widthDefault": 125
+          "widthDataType": 65,
+          "widthDefault": 122
         },
         "meta": {
           "updateAt": 1748545071936,
@@ -896,7 +896,7 @@
         "options": 8,
         "ui": {
           "keys": 2,
-          "widthName": 64,
+          "widthName": 61,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -998,7 +998,7 @@
           "columnIds": [
             "QufuUyGGowe0eYH8IqY1t"
           ],
-          "x": 818,
+          "x": 815,
           "y": 960,
           "direction": 2
         },
@@ -1007,7 +1007,7 @@
           "columnIds": [
             "7tchF7DE-ybOG2XpkOl7o"
           ],
-          "x": 879.25,
+          "x": 877.75,
           "y": 347,
           "direction": 8
         },
@@ -1026,7 +1026,7 @@
           "columnIds": [
             "p20TaC2OSjBzzh-bzmhLK"
           ],
-          "x": 1178.5,
+          "x": 1176.5,
           "y": 878,
           "direction": 4
         },
@@ -1035,7 +1035,7 @@
           "columnIds": [
             "I9zlrw6eEBdMvtd5vIHRm"
           ],
-          "x": 1079.75,
+          "x": 1075.25,
           "y": 347,
           "direction": 8
         },
@@ -1063,7 +1063,7 @@
           "columnIds": [
             "C5qppl6RiMI2xYRrplmWM"
           ],
-          "x": 629,
+          "x": 627,
           "y": 400,
           "direction": 2
         },
@@ -1082,7 +1082,7 @@
           "columnIds": [
             "R--qNhrxfwDKfPwOXClBn"
           ],
-          "x": 358,
+          "x": 356.5,
           "y": 624,
           "direction": 4
         },
@@ -1091,7 +1091,7 @@
           "columnIds": [
             "_ZMPNkmHtrfwKVlOneD7i"
           ],
-          "x": 435,
+          "x": 434,
           "y": 464,
           "direction": 8
         },
@@ -1110,7 +1110,7 @@
           "columnIds": [
             "IFXMPuziFOb1B-mKlTKlR"
           ],
-          "x": 1180,
+          "x": 1174,
           "y": 235,
           "direction": 2
         },
@@ -1138,7 +1138,7 @@
           "columnIds": [
             "EO7JdpAR9jT7ImoCtiMP9"
           ],
-          "x": 1754,
+          "x": 1753,
           "y": 839,
           "direction": 4
         },
@@ -1147,7 +1147,7 @@
           "columnIds": [
             "nWyEuAp5wrKQueNYgulLL"
           ],
-          "x": 1626,
+          "x": 1621.5,
           "y": 620,
           "direction": 8
         },

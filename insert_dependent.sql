@@ -204,8 +204,6 @@ INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES
 (38, 4, 9, 'Skvělá kamera.'), 
 (38, 5, 10, 'Divoký vizuál.');
 
-
-
 --počet záznamů: 80
 
 --počet celkových záznamů: 164

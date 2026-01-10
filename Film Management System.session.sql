@@ -31,6 +31,8 @@ CREATE TABLE Users (
 
 -- dependentní tabulky
 
+
+
 CREATE TABLE Films (
     Film_ID SERIAL PRIMARY KEY,
     Title VARCHAR(200) NOT NULL,
@@ -38,7 +40,8 @@ CREATE TABLE Films (
     Genre_ID INT REFERENCES Genres(Genre_ID) ON DELETE SET NULL,
     Director_ID INT REFERENCES Directors(Director_ID) ON DELETE SET NULL,
     Duration INT CHECK (Duration > 0),
-    Rating DECIMAL(3,1) CHECK (Rating BETWEEN 0 AND 10)
+    Rating DECIMAL(3,1) CHECK (Rating BETWEEN 0 AND 10),
+    Sequel_To_Film_ID INT REFERENCES Films(Film_ID) ON DELETE SET NULL -- Úkol 1: Struktura --> NOVÝ ŘÁDEK PRO REKURZIVNÍ VZTAH
 );
 
 

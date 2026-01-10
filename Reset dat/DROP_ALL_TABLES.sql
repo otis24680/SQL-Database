@@ -1,8 +1,10 @@
--- 1. Vymazání logiky (Procedury a Funkce) - NOVÉ
+DROP OWNED BY pepa_kritik;
+DROP USER IF EXISTS pepa_kritik;
+DROP ROLE IF EXISTS app_reader;
 DROP PROCEDURE IF EXISTS generate_genre_report;
 DROP FUNCTION IF EXISTS get_film_verdict;
 
--- 2. Vymazání pohledů (Views)
+
 DROP VIEW IF EXISTS film_complete_info CASCADE;
 DROP VIEW IF EXISTS director_statistics CASCADE;
 DROP VIEW IF EXISTS actor_filmography CASCADE;
@@ -14,7 +16,7 @@ DROP VIEW IF EXISTS user_reviews_summary CASCADE;
 DROP VIEW IF EXISTS film_directors_sorted CASCADE;
 DROP VIEW IF EXISTS film_ratings_full CASCADE;
 
--- 3. Vymazání tabulek (včetně nové tabulky Genre_Reports)
+
 DROP TABLE IF EXISTS Genre_Reports CASCADE; 
 DROP TABLE IF EXISTS Reviews CASCADE;
 DROP TABLE IF EXISTS Film_Actors CASCADE;

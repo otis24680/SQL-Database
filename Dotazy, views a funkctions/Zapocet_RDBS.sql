@@ -38,3 +38,19 @@ CALL generate_genre_report();
 
 -- 2. Podíváme se, co vytvořila v nové tabulce
 SELECT * FROM Genre_Reports;
+
+
+
+
+
+-- Úkol 6: Triggery pro auditování změn v tabulce Films
+-- 1. Podíváme se na nějakou existující recenzi (např. Review_ID = 1)
+SELECT * FROM Reviews WHERE Review_ID = 1;
+
+-- 2. Změníme jí hodnocení (např. z 10 na 5)
+UPDATE Reviews 
+SET Rating = 5 
+WHERE Review_ID = 1;
+
+-- 3. Podíváme se do Audit tabulky, jestli to trigger zachytil
+SELECT * FROM Reviews_Audit;

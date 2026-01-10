@@ -48,14 +48,14 @@ INSERT INTO Films (Title, Release_Year, Genre_ID, Director_ID, Duration, Rating)
 --Filmový_Herci (musí existovat Film_ID a Actor_ID)
 INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES 
 --interstellar
-(1, 2, 'Dr. Brand'), 
-(1, 3, 'Cooper'), 
+(1, 6, 'Dr. Brand'), 
+(1, 5, 'Cooper'), 
 -- The Departed
-(2, 3, 'Frank Costello'), 
-(2, 4, 'Madolyn'), 
+(2, 8, 'Colin Sullivan'), 
+(2, 36, 'Dignam'), 
 -- Titanic
-(3, 1, 'Jack Dawson'), 
-(3, 4, 'Rose DeWitt Bukater'),
+(3, 8, 'Jack Dawson'), 
+(3, 9, 'Rose DeWitt Bukater'),
 -- Pulp Fiction
 (19, 22, 'Vincent Vega'),
 (19, 23, 'Jules Winnfield'),

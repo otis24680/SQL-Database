@@ -3,7 +3,7 @@ CREATE OR REPLACE VIEW film_director_summary AS
 SELECT 
     Films.Title,  
     Films.Release_Year,  
-    Directors.First_Name || ' ' || Directors.Last_Name AS Director  -- spojíme jméno a příjmení
+    Directors.First_Name || ' ' || Directors.Last_Name AS Director
 FROM Films
 INNER JOIN Directors ON Films.Director_ID = Directors.Director_ID;
 
@@ -11,7 +11,7 @@ INNER JOIN Directors ON Films.Director_ID = Directors.Director_ID;
 CREATE OR REPLACE VIEW film_actor_summary AS
 SELECT 
     Films.Title AS Film_Title,  
-    Actors.First_Name || ' ' || Actors.Last_Name AS Actor_Name,  -- spojíme jméno a příjmení
+    Actors.First_Name || ' ' || Actors.Last_Name AS Actor_Name,
     Film_Actors.Role            
 FROM Film_Actors
 INNER JOIN Films ON Film_Actors.Film_ID = Films.Film_ID  
@@ -24,79 +24,7 @@ SELECT
     AVG(Reviews.Rating) AS Avg_Rating  
 FROM Reviews
 INNER JOIN Films ON Reviews.Film_ID = Films.Film_ID  
-GROUP BY Film
-Users
-comment
-User_ID
-SERIAL
-NULL
-default
-comment
-Username
-VARCHAR(50)
-NULL
-default
-comment
-Email
-VARCHAR(100)
-NULL
-default
-comment
-Films
-comment
-Film_ID
-SERIAL
-NULL
-default
-comment
-Genre_ID
-SERIAL
-N-N
-default
-comment
-Director_ID
-SERIAL
-N-N
-default
-comment
-Title
-VARCHAR(200)
-N-N
-default
-comment
-Release_Year
-INT
-N-N
-default
-comment
-Duration
-INT
-NULL
-default
-comment
-Rating
-DECIMAL(3,1)
-NULL
-default
-comment
-Film_Actors
-comment
-Film_ID
-SERIAL
-N-N
-default
-comment
-Actor_ID
-SERIAL
-N-N
-default
-comment
-Role
-VARCHAR(100)
-NULL
-default
-comment
-s.Title;
+GROUP BY Films.Title;
 
 -- 4. Počet recenzí a poslední recenze u každého filmu
 CREATE OR REPLACE VIEW film_review_stats AS
@@ -124,13 +52,13 @@ INNER JOIN Films ON Reviews.Film_ID = Films.Film_ID;
 CREATE OR REPLACE VIEW film_directors_sorted AS
 SELECT 
     Films.Title,                         
-    Directors.First_Name || ' ' || Directors.Last_Name AS Director  -- spojíme jméno a příjmení
+    Directors.First_Name || ' ' || Directors.Last_Name AS Director
 FROM Films
 INNER JOIN Directors ON Films.Director_ID = Directors.Director_ID
-ORDER BY Directors.Last_Name ASC, Directors.First_Name ASC;        -- řazení podle příjmení/vzestupně
+ORDER BY Directors.Last_Name ASC, Directors.First_Name ASC;
 
--- full film rating
-CREATE VIEW film_ratings_full AS
+-- 7. Full film rating view
+CREATE OR REPLACE VIEW film_ratings_full AS
 SELECT 
     Films.Title AS Film_Title,
     Reviews.Rating,

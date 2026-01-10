@@ -45,7 +45,8 @@ CREATE TABLE Films (
 CREATE TABLE Film_Actors (
     Film_ID INT REFERENCES Films(Film_ID) ON DELETE CASCADE,
     Actor_ID INT REFERENCES Actors(Actor_ID) ON DELETE CASCADE,
-    Role VARCHAR(100)
+    Role VARCHAR(100),
+    UNIQUE(Film_ID, Actor_ID)
 );
 
 

@@ -29,7 +29,7 @@ BEGIN
             -- Výpočet
             SELECT AVG(Rating) INTO v_avg FROM Films WHERE Genre_ID = v_genre_id;
             
-            -- Ošetření NULL
+            -- pozor na NULL
             IF v_avg IS NULL THEN v_avg := 0; END IF;
 
             -- Vložení do tabulky
@@ -43,7 +43,7 @@ BEGIN
         END; 
 
         
-        -- COMMIT; -- i přesto, že je v zadání, že se má použít transakce, tak sqltools si poradí pouze z autocommit režimem
+        --COMMIT; -- i přesto, že je v zadání, že se má použít transakce, tak sqltools si poradí pouze z autocommit režimem v tomhle případě
         
     END LOOP;
 

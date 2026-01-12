@@ -13,16 +13,16 @@ BEGIN
 
     -- 2. Ošetření situace, kdy film nemá žádné recenze
     IF v_avg_score IS NULL THEN
-        RETURN 'No Reviews Yet 🤷‍♂️';
+        RETURN 'No Reviews Yet ';
     END IF;
 
     -- 3. Rozhodovací logika
     IF v_avg_score >= 8.0 THEN
-        v_verdict := 'Masterpiece 🏆 (' || ROUND(v_avg_score, 1) || ')';
+        v_verdict := 'Masterpiece  (' || ROUND(v_avg_score, 1) || ')';
     ELSIF v_avg_score >= 5.0 THEN
-        v_verdict := 'Solid Movie 👍 (' || ROUND(v_avg_score, 1) || ')';
+        v_verdict := 'Solid Movie  (' || ROUND(v_avg_score, 1) || ')';
     ELSE
-        v_verdict := 'Waste of Time 👎 (' || ROUND(v_avg_score, 1) || ')';
+        v_verdict := 'Waste of Time  (' || ROUND(v_avg_score, 1) || ')';
     END IF;
 
     -- 4. Vrácení výsledku

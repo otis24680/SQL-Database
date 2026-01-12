@@ -21,14 +21,14 @@ class Film(Base):
 
     
     def __repr__(self):
-        return f"<Film(Název='{self.title}', Rok={self.release_year}, Hodnocení={self.rating})>"
+        return f"<--Film(Název='{self.title}', Rok={self.release_year}, Hodnocení={self.rating})-->"
 
 # 3. Vytvoření Session (relace pro komunikaci)
 Session = sessionmaker(bind=engine)
 session = Session()
 
 
-print("--- Výpis všech Sci-Fi filmů (pomocí Pythonu) ---")
+print("------ Výpis všech Sci-Fi filmů ------")
 sci_fi_movies = session.query(Film).filter(Film.rating > 8.0).limit(5).all()
 
 for movie in sci_fi_movies:

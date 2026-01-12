@@ -22,4 +22,4 @@ GRANT UPDATE ON Reviews TO pepa_kritik; -- Může opravovat své recenze
 BEGIN; -- Začátek transakce  
     LOCK TABLE Reviews IN SHARE MODE;  --Úkol 2I - Zamknutí tabulky pro čtení
     SELECT COUNT(*) FROM Reviews;
-COMMIT; -- Konec transakce, tabulka se odemkne.
+COMMIT; --odemčení

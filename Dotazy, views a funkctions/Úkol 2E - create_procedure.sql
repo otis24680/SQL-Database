@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS Genre_Reports (
     Report_Date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- 2. Procedura (Opravená verze - COMMIT mimo EXCEPTION blok)
+-- 2. Procedura
 CREATE OR REPLACE PROCEDURE generate_genre_report()
 LANGUAGE plpgsql
 AS $$

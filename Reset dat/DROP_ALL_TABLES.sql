@@ -1,6 +1,6 @@
 
 
--- Revoke privileges from app_reader before dropping
+
 REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM app_reader;
 REVOKE ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public FROM app_reader;
 REVOKE ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public FROM app_reader;
@@ -8,15 +8,10 @@ REVOKE ALL PRIVILEGES ON ALL PROCEDURES IN SCHEMA public FROM app_reader;
 REVOKE ALL PRIVILEGES ON SCHEMA public FROM app_reader;
 REVOKE ALL PRIVILEGES ON DATABASE film_database FROM app_reader;
 
-REVOKE app_reader FROM pepa_kritik;
-
-DROP OWNED BY app_reader;
-DROP ROLE IF EXISTS app_reader;
 DROP PROCEDURE IF EXISTS generate_genre_report;
 DROP FUNCTION IF EXISTS get_film_verdict;
 DROP FUNCTION IF EXISTS log_review_changes;
-DROP OWNED BY pepa_kritik;
-DROP USER IF EXISTS pepa_kritik;
+
 
 
 DROP VIEW IF EXISTS film_complete_info CASCADE;

@@ -12,7 +12,7 @@ INNER JOIN Films f2 ON f1.Sequel_To_Film_ID = f2.Film_ID;
 
 INSERT INTO Films (Title, Release_Year, Genre_ID, Director_ID, Duration, Rating) 
 VALUES ('Titanic', 1997, 3, 2, 195, 7.9)
-ON CONFLICT (Title, Release_Year) DO NOTHING; -- Ignoruje duplicitní vložení
+--ON CONFLICT (Title, Release_Year) DO NOTHING; -- Ignoruje duplicitní vložení
 
 SELECT Comment 
 FROM Reviews 
@@ -53,7 +53,7 @@ SELECT * FROM Reviews WHERE Review_ID = 3;
 -- 2. Změníme jí hodnocení (např. z 10 na 5)
 UPDATE Reviews 
 SET Rating = 5 
-WHERE Review_ID = 1;
+WHERE Review_ID = 3;
 
 -- 3. Podíváme se do Audit tabulky, jestli to trigger zachytil
 SELECT * FROM Reviews_Audit;

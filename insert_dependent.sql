@@ -1,6 +1,6 @@
 -- Filmy (musí existovat Genre_ID a Director_ID)
 INSERT INTO Films (Title, Release_Year, Genre_ID, Director_ID, Duration, Rating) VALUES 
-('Interstellar', 2014, 1, 4, 169, 8.6), 
+('Interstellar', 2014, 1, 4, 169, 8.6),
 ('The Departed', 2006, 2, 3, 151, 8.5), 
 ('Titanic', 1997, 3, 2, 195, 7.9),
 ('Raging Bull', 1980, 2, 3, 129, 8.2),    
@@ -122,7 +122,7 @@ INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES
 --Hodnocení (musí existovat Film_ID a User_ID)
 INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES 
 (1, 1, 10, 'Amazing visuals and story!'), 
-(1, 4, 10, 'Nezapomenutelný zážitek pro kohokoliv!'),
+(1, 4, 10, 'Nezapomenutelný zážitek pro kohokoliv!');
 (2, 2, 9, 'A crime thriller masterpiece.'), 
 (3, 3, 8, 'Classic love story.'),
 (4, 5, 9, 'Great performances and intense story.'),

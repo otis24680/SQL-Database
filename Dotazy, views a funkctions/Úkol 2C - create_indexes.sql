@@ -1,7 +1,7 @@
 
 -- Úkol 2a: Zajištění, že nemohou existovat dva filmy se stejným názvem ve stejném roce.
-CREATE UNIQUE INDEX idx_films_title_year_unique 
-ON Films (Title, Release_Year);
+    CREATE UNIQUE INDEX idx_films_title_year_unique 
+    ON Films (Title, Release_Year);
 
 -- Úkol 2b: Fulltextový index (Full-Text Search Index) --> Umožní efektivní vyhledávání slov v komentářích recenzí.
 CREATE INDEX idx_reviews_comment_fulltext 

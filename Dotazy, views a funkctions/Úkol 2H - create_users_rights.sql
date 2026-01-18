@@ -58,12 +58,14 @@ SELECT current_user, datname FROM pg_database WHERE datistemplate = false;
 SELECT Title, Release_Year, Rating FROM Films LIMIT 3;
 
 -- 4. Test zápisu (Mělo by vložit recenzi - úspěch)
-INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES (1, 1, 9, 'Recenze od Pepy: Funguje to!');
+INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES (10, 1, 9, 'Recenze od Pepy: Funguje to!'); -- nesmí být id 1.
 
 -- 5. Ověření zápisu (Mělo by najít tu novou recenzi)
 SELECT * FROM Reviews WHERE Comment = 'Recenze od Pepy: Funguje to!';
 
 -- 6. Test mazání (Mělo by selhat s chybou "permission denied")
+SET ROLE pepa_kritik;
+SELECT current_user, datname FROM pg_database WHERE datistemplate = false;
 DELETE FROM Films WHERE Film_ID = 1;
 
 -- Návrat zpět do role administrátora

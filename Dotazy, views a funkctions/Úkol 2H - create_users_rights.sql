@@ -72,10 +72,7 @@ DELETE FROM Films WHERE Film_ID = 1;
 RESET ROLE;
 
 
--- =================================================================
--- ÚKOL I: LOCK (Zamykání tabulek)
--- =================================================================
-
+--LOCK (Zamykání tabulek)
 BEGIN;
     LOCK TABLE Reviews IN SHARE MODE;
     SELECT COUNT(*) as pocet_recenzi_pri_zamku FROM Reviews;

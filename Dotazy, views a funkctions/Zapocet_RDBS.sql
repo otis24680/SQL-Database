@@ -50,7 +50,7 @@ SELECT * FROM Genre_Reports;
 -- 1. Podíváme se na nějakou existující recenzi (např. Review_ID = 1)
 SELECT * FROM Reviews WHERE Review_ID = 3;
 
--- 2. Změníme jí hodnocení (např. z 10 na 5)
+-- 2. Změníme jí hodnocení (např. z 9 na 5)
 UPDATE Reviews 
 SET Rating = 5 
 WHERE Review_ID = 3;

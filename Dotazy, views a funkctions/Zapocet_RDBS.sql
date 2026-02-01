@@ -20,7 +20,7 @@ WHERE to_tsvector('english', Comment) @@ to_tsquery('english', 'zklamání');
 
 -- SELECT Comment 
 -- FROM Reviews 
--- WHERE to_tsvector('simple', Comment) @@ to_tsquery('simple', 'zklamání');
+-- WHERE to_tsvector('simple', Comment) @@ to_tsquery('simple', 'zklamání'); <-- asi bude lepší kvůli diakritice, ale z nějakého důvodu english zvládá diakritiku taky
 
 
 

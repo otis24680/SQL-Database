@@ -1,3 +1,6 @@
+-- Reset dependent tables to keep IDs aligned
+TRUNCATE TABLE Film_Actors, Reviews, Films RESTART IDENTITY CASCADE;
+
 -- Filmy (musí existovat Genre_ID a Director_ID)
 INSERT INTO Films (Title, Release_Year, Genre_ID, Director_ID, Duration, Rating) VALUES 
 ('Interstellar', 2014, 1, 4, 169, 8.6),
@@ -114,15 +117,15 @@ INSERT INTO Film_Actors (Film_ID, Actor_ID, Role) VALUES
 (37, 58, 'Chris Wilton'),
 (37, 59, 'Nola Rice'),
 -- Vicky Cristina Barcelona
-(38, 60, 'Maria Elena'),
-(38, 61, 'Vicky');
+(38, 59, 'Maria Elena'),
+(38, 60, 'Vicky');
 
 --počet záznamů: 46
 
 --Hodnocení (musí existovat Film_ID a User_ID)
 INSERT INTO Reviews (Film_ID, User_ID, Rating, Comment) VALUES 
 (1, 1, 10, 'Amazing visuals and story!'), 
-(1, 4, 10, 'Nezapomenutelný zážitek pro kohokoliv!');
+(1, 4, 10, 'Nezapomenutelný zážitek pro kohokoliv!'),
 (2, 2, 9, 'A crime thriller masterpiece.'), 
 (3, 3, 8, 'Classic love story.'),
 (4, 5, 9, 'Great performances and intense story.'),

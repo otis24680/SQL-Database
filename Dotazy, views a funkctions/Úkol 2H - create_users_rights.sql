@@ -39,8 +39,9 @@ CREATE USER pepa_kritik WITH PASSWORD 'tajne_heslo_123';
 GRANT app_reader TO pepa_kritik;
 
 -- Přidání specifických práv pro Pepu
-GRANT INSERT, UPDATE ON Reviews TO pepa_kritik;
+GRANT INSERT, UPDATE, DELETE ON Reviews TO pepa_kritik;
 GRANT USAGE ON SEQUENCE reviews_review_id_seq TO pepa_kritik;
+REVOKE DELETE ON Films FROM pepa_kritik;
 
 
 -- 4. SPLNĚNÍ BODU: přihlásit a ověřit dostupnost databází

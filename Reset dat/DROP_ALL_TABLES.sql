@@ -10,6 +10,7 @@ REVOKE ALL PRIVILEGES ON DATABASE film_database FROM app_reader;
 
 DROP PROCEDURE IF EXISTS generate_genre_report;
 DROP FUNCTION IF EXISTS get_film_verdict;
+DROP TRIGGER IF EXISTS trg_audit_review_update ON Reviews;
 DROP FUNCTION IF EXISTS log_review_changes;
 drop index if exists idx_films_title_year_unique;
 

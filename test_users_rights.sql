@@ -1,8 +1,3 @@
--- Testování práv uživatele pepa_kritik
-
--- Pokus o připojení jako pepa_kritik a spuštění dotazů
-
--- Tento soubor spustit jako admin pro testování
 
 -- Nejprve ověření, že role a uživatel existují
 SELECT rolname FROM pg_roles WHERE rolname IN ('app_reader', 'pepa_kritik');

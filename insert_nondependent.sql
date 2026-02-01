@@ -59,7 +59,6 @@ INSERT INTO Actors (First_Name, Last_Name, Birthdate) VALUES
 ('Russell',    'Crowe',               '1964-04-07'),
 ('Joaquin',    'Phoenix',             '1974-10-28'),
 ('Matt',       'Damon',               '1970-10-08'),
-('Jessica',    'Chastain',            '1977-03-24'),
 ('Josh',       'Hartnett',            '1978-07-21'),
 ('Ewan',       'McGregor',            '1971-03-31'),
 ('Tom',        'Skerritt',            '1933-08-25'),

@@ -12,3 +12,5 @@ RIGHT JOIN Actors a ON fa.Actor_ID = a.Actor_ID;
 
 
 SELECT * FROM film_full_info
+
+

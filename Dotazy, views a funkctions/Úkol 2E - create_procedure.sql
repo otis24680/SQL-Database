@@ -1,4 +1,4 @@
--- Úkol 5: Vytvoření procedury s kurzorem, transakcí a ošetřením chyb
+-- Úkol 2E: Vytvoření procedury s kurzorem, transakcí a ošetřením chyb
 
 -- 1. Pomocná tabulka
 CREATE TABLE IF NOT EXISTS Genre_Reports (
@@ -50,3 +50,9 @@ BEGIN
     CLOSE cur_genres;
 END;
 $$;
+
+
+
+-- zavoláme a otevřeme
+CALL generate_genre_report();
+SELECT * FROM Genre_Reports;

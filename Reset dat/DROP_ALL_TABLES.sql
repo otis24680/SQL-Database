@@ -38,3 +38,24 @@ DROP TABLE IF EXISTS Actors CASCADE;
 DROP TABLE IF EXISTS Directors CASCADE;
 DROP TABLE IF EXISTS Genres CASCADE;
 
+DO $$
+BEGIN
+    -- Pokud uživatel existuje, vyčistíme po něm
+    IF EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = 'pepa_kritik') THEN
+        -- Změna zde: 'postgres' nahrazeno za 'admin'
+        REASSIGN OWNED BY pepa_kritik TO admin; 
+        DROP OWNED BY pepa_kritik;
+    END IF;
+END $$;
+
+DROP USER IF EXISTS pepa_kritik;
+
+-- To samé pro roli
+DO $$
+BEGIN
+    IF EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = 'app_reader') THEN
+        DROP OWNED BY app_reader;
+    END IF;
+END $$;
+
+DROP ROLE IF EXISTS app_reader;

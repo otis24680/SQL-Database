@@ -29,3 +29,16 @@ CREATE TRIGGER trg_audit_review_update
 AFTER UPDATE ON Reviews
 FOR EACH ROW
 EXECUTE FUNCTION log_review_changes();
+
+
+
+-- Podíváme se na nějakou existující recenzi (např. Review_ID = 1)
+SELECT * FROM Reviews WHERE Review_ID = 3;
+
+-- Změníme jí hodnocení (např. z 9 na 5)
+UPDATE Reviews 
+SET Rating = 5 
+WHERE Review_ID = 3;
+
+-- Podíváme se do Audit tabulky, jestli to trigger zachytil
+SELECT * FROM Reviews_Audit;

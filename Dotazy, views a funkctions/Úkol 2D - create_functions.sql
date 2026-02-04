@@ -1,5 +1,5 @@
 
--- Úkol 4: Vytvoření funkce pro hodnocení filmu na základě recenzí
+-- Úkol 2D: Vytvoření funkce pro hodnocení filmu na základě recenzí
 CREATE OR REPLACE FUNCTION get_film_verdict(p_film_id INT) 
 RETURNS VARCHAR AS $$
 DECLARE
@@ -29,3 +29,10 @@ BEGIN
     RETURN v_verdict;
 END;
 $$ LANGUAGE plpgsql;
+
+
+
+-- Úkol 2D: Vytvoření funkce pro hodnocení filmu na základě recenzí
+SELECT Title, get_film_verdict(Film_ID) as Verdict
+FROM Films
+WHERE Title IN ('Interstellar', 'Titanic', 'Gladiator', 'True Lies');
